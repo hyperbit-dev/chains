@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,7 +16,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "publish": "yarn semver"
   },
   "peerDependencies": {},
   "husky": {
@@ -31,6 +32,11 @@
     "trailingComma": "es5"
   },
   "name": "@hypereon/chains",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HypereonLabs/chains.git"
+  },
+  "homepage": "https://github.com/HypereonLabs/chains/blob/master/README.md",
   "author": "Hypereon",
   "module": "dist/chains.esm.js",
   "size-limit": [
@@ -53,5 +59,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "semver": "^7.3.8"
   }
 }
