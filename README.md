@@ -67,7 +67,7 @@ const { main, test } = chains.btc;
 
 ## Contributing
 
-If you're interested in contributing, please read the contributing docs before submitting a pull request.
+If you're interested in contributing, please read the [contributing docs](https://github.com/HypereonLabs/chains/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
 ## Authors
 

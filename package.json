@@ -16,8 +16,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "publish": "yarn semver"
+    "analyze": "size-limit --why"
   },
   "peerDependencies": {},
   "husky": {
@@ -60,7 +59,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "semver": "^7.3.8"
-  }
+  "dependencies": {}
 }
