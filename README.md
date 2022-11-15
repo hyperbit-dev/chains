@@ -4,9 +4,24 @@
 
 JavaScript dictionary of blockchain specifications inspired from coinkey with additional fields and values.
 
-Example:
+## Installation
 
+```bash
+npm install @hypereon/chains
 ```
+
+## Usage
+
+```javascript
+import chains from '@hypereon/chains';
+
+const { main, test } = chains.btc;
+```
+
+Example Output:
+
+```javascript
+// chains.btc.main
 btc: {
   main: {
     name: 'Bitcoin',
@@ -23,20 +38,6 @@ btc: {
     versions: {...}`
   }
 }
-```
-
-## Installation
-
-```bash
-npm install @hypereon/chains
-```
-
-## Usage
-
-```javascript
-import { chains } from '@hypereon/chains';
-
-const { main, test } = chains.btc;
 ```
 
 ## Supported Chains
