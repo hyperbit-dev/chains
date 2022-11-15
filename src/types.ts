@@ -6,7 +6,7 @@ export type Common = {
   messagePrefixAlts?: string[];
   seedsDns?: string[];
   isProofOfStake?: boolean;
-}
+};
 
 export type Network = Common & {
   hashGenesisBlock: string;
@@ -16,7 +16,7 @@ export type Network = Common & {
   seedsDns: string[];
   versions: Record<string, any>;
   bech32?: string;
-}
+};
 
 export type TestNetwork = Common & {
   hashGenesisBlock: string;
@@ -25,4 +25,4 @@ export type TestNetwork = Common & {
   protocol?: Record<string, number>;
   versions: Record<string, any>;
   bech32?: string;
-}
+};
