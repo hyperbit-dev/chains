@@ -1,6 +1,6 @@
 /* source: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp */
 
-import { Common, Network, TestNetwork } from '../types'
+import { Common, Network, TestNetwork } from '../types';
 
 const common: Common = {
   name: 'Bitcoin',
