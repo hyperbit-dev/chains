@@ -22,7 +22,6 @@ const main: Network = {
   protocol: {
     magic: 0x2a7bc0a1,
   },
-  bech32: 'rc',
   // https://github.com/RitoProject/Ritocoin/blob/master/src/chainparams.cpp#L164
   seedsDns: ['s1.ritocoin.org', 's2.ritocoin.org', 's3.ritocoin.org'],
   versions: {
@@ -51,7 +50,6 @@ const test: TestNetwork = {
   protocol: {
     magic: 0x514e5352,
   },
-  bech32: 'tr',
   // https://github.com/RitoProject/Ritocoin/blob/master/src/chainparams.cpp#L324
   seedsDns: ['tn.s1.ritocoin.org', 'tn.s2.ritocoin.org', 'tn.s3.ritocoin.org'],
   versions: {
