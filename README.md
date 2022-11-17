@@ -13,15 +13,20 @@ npm install @hypereon/chains
 ## Usage
 
 ```javascript
-import chains from '@hypereon/chains';
+import * as chains from '@hypereon/chains';
 
 const { main, test } = chains.btc;
+```
+
+```javascript
+import { btc } from '@hypereon/chains';
+
+const { main, test } = btc;
 ```
 
 Example Output:
 
 ```javascript
-// chains.btc.main
 btc: {
   main: {
     name: 'Bitcoin',
