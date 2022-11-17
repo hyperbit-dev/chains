@@ -22,8 +22,6 @@ const main: Network = {
   protocol: {
     magic: 0x4d525645,
   },
-  // https://en.bitcoin.it/wiki/Bech32
-  bech32: 'ec',
   // https://github.com/EvrmoreOrg/Evrmore/blob/develop/src/chainparams.cpp#L268
   seedsDns: ['seed-mainnet-evr.evrmorecoin.org'],
   versions: {
@@ -55,8 +53,6 @@ const test: TestNetwork = {
   protocol: {
     magic: 0x54525645,
   },
-  // https://en.bitcoin.it/wiki/Bech32
-  bech32: 'te',
   // https://github.com/EvrmoreOrg/Evrmore/blob/develop/src/chainparams.cpp#L427
   seedsDns: ['seed-testnet-evr.evrmorecoin.org'],
   versions: {

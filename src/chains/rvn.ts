@@ -22,7 +22,6 @@ const main: Network = {
   protocol: {
     magic: 0x4e564152,
   },
-  bech32: 'rc',
   // https://github.com/RavenProject/Ravencoin/blob/master/src/chainparams.cpp#L191
   seedsDns: [
     'seed-raven.bitactivate.com',
@@ -55,7 +54,6 @@ const test: TestNetwork = {
   protocol: {
     magic: 0x544e5652,
   },
-  bech32: 'tr',
   seedsDns: [
     'seed-testnet-raven.bitactivate.com',
     'seed-testnet-raven.ravencoin.com',
