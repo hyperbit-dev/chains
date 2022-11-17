@@ -6,6 +6,7 @@ export type Common = {
   messagePrefixAlts?: string[];
   seedsDns?: string[];
   isProofOfStake?: boolean;
+  bech32?: string;
 };
 
 export type Network = Common & {
@@ -15,7 +16,6 @@ export type Network = Common & {
   protocol?: Record<string, number>;
   seedsDns: string[];
   versions: Record<string, any>;
-  bech32?: string;
 };
 
 export type TestNetwork = Common & {
@@ -24,5 +24,4 @@ export type TestNetwork = Common & {
   portRpc: number;
   protocol?: Record<string, number>;
   versions: Record<string, any>;
-  bech32?: string;
 };
