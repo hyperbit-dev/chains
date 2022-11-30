@@ -13,7 +13,7 @@ npm install @hypereon/chains
 ## Usage
 
 ```javascript
-import * as chains from '@hypereon/chains';
+import { chains } from '@hypereon/chains';
 
 const { main, test } = chains.btc;
 ```
