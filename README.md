@@ -1,25 +1,25 @@
-![Hypereon Chains Banner](https://github.com/hypereon-dev/chains/raw/master/media/repo-banner.png)
+![Hyperbit Chains Banner](https://github.com/hyperbit-dev/chains/raw/master/media/repo-banner.png)
 
-# Hypereon - Chains
+# Hyperbit - Chains
 
 JavaScript dictionary of blockchain specifications inspired from coinkey with additional fields and values.
 
 ## Installation
 
 ```bash
-npm install @hypereon/chains
+npm install @hyperbitjs/chains
 ```
 
 ## Usage
 
 ```javascript
-import { chains } from '@hypereon/chains';
+import { chains } from '@hyperbitjs/chains';
 
 const { main, test } = chains.btc;
 ```
 
 ```javascript
-import { btc } from '@hypereon/chains';
+import { btc } from '@hyperbitjs/chains';
 
 const { main, test } = btc;
 ```
@@ -47,35 +47,35 @@ btc: {
 
 ## Supported Chains
 
-- [BitcoinCash](https://github.com/hypereon-dev/chains/blob/master/src/chains/bch.ts) (BCH)
-- [BlackCoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/blk.ts) (BLK)
-- [Bitcoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/btc.ts) (BTC)
-- [Bitcoin Gold](https://github.com/hypereon-dev/chains/blob/master/src/chains/btg.ts) (BTG)
-- [c0ban](https://github.com/hypereon-dev/chains/blob/master/src/chains/cbn.ts) (RYO)
-- [CityCoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/city.ts) (CITY)
-- [Dash](https://github.com/hypereon-dev/chains/blob/master/src/chains/dash.ts) (DASH)
-- [Decred](https://github.com/hypereon-dev/chains/blob/master/src/chains/dcr.ts) (DCR)
-- [DigiByte](https://github.com/hypereon-dev/chains/blob/master/src/chains/dgb.ts) (DGB)
-- [Denarius](https://github.com/hypereon-dev/chains/blob/master/src/chains/dnr.ts) (DNR)
-- [Dogecoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/doge.ts) (DOGE)
-- [Evrmore](https://github.com/hypereon-dev/chains/blob/master/src/chains/evr.ts) (EVR)
-- [Groestlcoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/grs.ts) (GRS)
-- [Litecoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/ltc.ts) (LTC)
-- [Monacoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/mona.ts) (MONA)
-- [NuBits](https://github.com/hypereon-dev/chains/blob/master/src/chains/nbt.ts) (NBT)
-- [Namecoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/nmc.ts) (NMC)
-- [Peercoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/ppc.ts) (PPC)
-- [Qtum](https://github.com/hypereon-dev/chains/blob/master/src/chains/qtum.ts) (QTUM)
-- [ReddCoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/rdd.ts) (RDD)
-- [Ravencoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/rvn.ts) (RVN)
-- [Ritocoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/rito.ts) (RITO)
-- [Viacoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/via.ts) (VIA)
-- [Vertcoin](https://github.com/hypereon-dev/chains/blob/master/src/chains/vtc.ts) (VTC)
-- [x42](https://github.com/hypereon-dev/chains/blob/master/src/chains/x42.ts) (x42)
+- [BitcoinCash](https://github.com/hyperbit-dev/chains/blob/master/src/chains/bch.ts) (BCH)
+- [BlackCoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/blk.ts) (BLK)
+- [Bitcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/btc.ts) (BTC)
+- [Bitcoin Gold](https://github.com/hyperbit-dev/chains/blob/master/src/chains/btg.ts) (BTG)
+- [c0ban](https://github.com/hyperbit-dev/chains/blob/master/src/chains/cbn.ts) (RYO)
+- [CityCoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/city.ts) (CITY)
+- [Dash](https://github.com/hyperbit-dev/chains/blob/master/src/chains/dash.ts) (DASH)
+- [Decred](https://github.com/hyperbit-dev/chains/blob/master/src/chains/dcr.ts) (DCR)
+- [DigiByte](https://github.com/hyperbit-dev/chains/blob/master/src/chains/dgb.ts) (DGB)
+- [Denarius](https://github.com/hyperbit-dev/chains/blob/master/src/chains/dnr.ts) (DNR)
+- [Dogecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/doge.ts) (DOGE)
+- [Evrmore](https://github.com/hyperbit-dev/chains/blob/master/src/chains/evr.ts) (EVR)
+- [Groestlcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/grs.ts) (GRS)
+- [Litecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/ltc.ts) (LTC)
+- [Monacoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/mona.ts) (MONA)
+- [NuBits](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nbt.ts) (NBT)
+- [Namecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nmc.ts) (NMC)
+- [Peercoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/ppc.ts) (PPC)
+- [Qtum](https://github.com/hyperbit-dev/chains/blob/master/src/chains/qtum.ts) (QTUM)
+- [ReddCoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/rdd.ts) (RDD)
+- [Ravencoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/rvn.ts) (RVN)
+- [Ritocoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/rito.ts) (RITO)
+- [Viacoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/via.ts) (VIA)
+- [Vertcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/vtc.ts) (VTC)
+- [x42](https://github.com/hyperbit-dev/chains/blob/master/src/chains/x42.ts) (x42)
 
 ## Contributing
 
-If you're interested in contributing, please read the [contributing docs](https://github.com/hypereon-dev/chains/blob/master/CONTRIBUTING.md) before submitting a pull request.
+If you're interested in contributing, please read the [contributing docs](https://github.com/hyperbit-dev/chains/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
 ## Authors
 
