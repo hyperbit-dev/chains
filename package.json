@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -31,13 +31,13 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@hypereon/chains",
+  "name": "@hyperbitjs/chains",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hypereon-dev/chains.git"
+    "url": "https://github.com/hyperbit-dev/chains.git"
   },
-  "homepage": "https://github.com/hypereon-dev/chains/blob/master/README.md",
-  "author": "Hypereon",
+  "homepage": "https://github.com/hyperbit-dev/chains/blob/master/README.md",
+  "author": "Hyperbit",
   "module": "dist/chains.esm.js",
   "size-limit": [
     {
