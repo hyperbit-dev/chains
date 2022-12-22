@@ -12,6 +12,7 @@ export * from './doge';
 export * from './evr';
 export * from './grs';
 export * from './ltc';
+export * from './mewc';
 export * from './mona';
 export * from './nbt';
 export * from './nmc';

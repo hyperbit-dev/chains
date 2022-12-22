@@ -61,6 +61,7 @@ btc: {
 - [Evrmore](https://github.com/hyperbit-dev/chains/blob/master/src/chains/evr.ts) (EVR)
 - [Groestlcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/grs.ts) (GRS)
 - [Litecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/ltc.ts) (LTC)
+- [Meowcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/mewc.ts) (MEWC)
 - [Monacoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/mona.ts) (MONA)
 - [NuBits](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nbt.ts) (NBT)
 - [Namecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nmc.ts) (NMC)
