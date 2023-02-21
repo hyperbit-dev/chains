@@ -26,6 +26,10 @@ const main: Network = {
   seedsDns: ['seed.digibyte.io', 'digiexplorer.info', 'digihash.co'],
   // base58Prefixes
   versions: {
+    bip32: {
+      private: 0x0488ade4,
+      public: 0x0488b21e,
+    },
     bip44: 20,
     private: 0x80,
     public: 0x1e,

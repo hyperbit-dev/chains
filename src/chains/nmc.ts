@@ -1,4 +1,4 @@
-import { Common, Network } from '../types';
+import { Common, Network, TestNetwork } from '../types';
 
 const common: Common = {
   name: 'Namecoin',
@@ -12,8 +12,10 @@ const main: Network = {
   ...common,
   hashGenesisBlock:
     '000000000062b72c5e2ceb45fbc8587e807c155b0da735e6483dfba2f0a9c770',
-  port: 7336,
-  portRpc: 7333,
+  // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparamsbase.cpp#L48
+  port: 8334,
+  // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparamsbase.cpp#L48
+  portRpc: 8336,
   seedsDns: [
     'seed.namecoin.libreisp.se',
     'nmc.seed.quisquis.de',
@@ -23,6 +25,11 @@ const main: Network = {
     'dnsseed.nmc.testls.space',
   ],
   versions: {
+    // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L166
+    bip32: {
+      private: 0x0488ade4,
+      public: 0x0488b21e,
+    },
     bip44: 7,
     private: 0xb4,
     public: 0x34,
@@ -30,7 +37,32 @@ const main: Network = {
   },
 };
 
+const test: TestNetwork = {
+  ...common,
+  // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L319
+  hashGenesisBlock:
+    '00000007199508e34a9ff81e6ec0c477a4cccff2a4767a8eee39c11db367b008',
+  //  https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparamsbase.cpp#L50
+  port: 18334,
+  // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparamsbase.cpp#L50
+  portRpc: 18336,
+  // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L325
+  seedsDns: ['dnsseed.test.namecoin.webbtc.com', 'ncts.roanapur.info'],
+  versions: {
+    // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L166
+    bip32: {
+      private: 0x0488ade4,
+      public: 0x0488b21e,
+    },
+    bip44: 7,
+    // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L327
+    private: 0xef,
+    public: 0x6f,
+    scripthash: 0xc4,
+  },
+};
+
 export const nmc = {
   main,
-  test: null,
+  test,
 };
