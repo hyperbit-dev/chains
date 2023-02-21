@@ -42,6 +42,10 @@ const test: TestNetwork = {
   port: 33368,
   portRpc: 32368,
   versions: {
+    bip32: {
+      private: 0x04358394,
+      public: 0x043587cf,
+    },
     bip44: 1,
     private: 0x8c,
     public: 0x12,

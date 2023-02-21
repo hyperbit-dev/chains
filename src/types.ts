@@ -1,3 +1,18 @@
+export type Bip32 = {
+  private: number;
+  public: number;
+};
+
+export type Versions = {
+  bip32: Bip32;
+  bip44?: number;
+  private: number;
+  private2?: number;
+  public: number;
+  scripthash: number;
+  scripthash2?: number;
+};
+
 export type Common = {
   name: string;
   unit: string;
@@ -15,7 +30,7 @@ export type Network = Common & {
   portRpc: number;
   protocol?: Record<string, number>;
   seedsDns: string[];
-  versions: Record<string, any>;
+  versions: Versions;
 };
 
 export type TestNetwork = Common & {
@@ -23,5 +38,22 @@ export type TestNetwork = Common & {
   port: number;
   portRpc: number;
   protocol?: Record<string, number>;
-  versions: Record<string, any>;
+  versions: Versions;
+};
+
+export type BitcoinJS = (Network | TestNetwork) & {
+  bip32: Bip32;
+  pubKeyHash: number;
+  scriptHash: number;
+  wif: number;
+  dustThreshold: null;
+};
+
+export type BitCore = (Network | TestNetwork) & {
+  networkMagic: number;
+  pubkeyhash: number;
+  privatekey: number;
+  xpubkey: number;
+  xprivkey: number;
+  dnsSeeds: string[];
 };

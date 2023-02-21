@@ -103,7 +103,7 @@ const regtest: TestNetwork = {
 };
 
 // source: https://github.com/btcsuite/btcd/blob/6867ff32788a1beb9d148e414d7f84f50958f0d2/chaincfg/params.go#L508
-const simnet = {
+const simnet: TestNetwork = {
   ...common,
   hashGenesisBlock:
     'f67ad7695d9b662a72ff3d8edbbb2de0bfa67b13974bb9910d116d5cbd863e68',

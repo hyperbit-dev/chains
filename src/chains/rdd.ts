@@ -21,6 +21,11 @@ const main: Network = {
     'dnsseed03.redd.ink',
   ],
   versions: {
+    // https://github.com/reddcoin-project/reddcoin/blob/master/src/chainparams.cpp#L317
+    bip32: {
+      private: 0x0488b21e,
+      public: 0x0488ade4,
+    },
     bip44: 4,
     private: 0xbd,
     public: 0x3d,
@@ -36,6 +41,11 @@ const test: TestNetwork = {
   portRpc: 55443,
   seedsDns: ['testnet-seed.reddcoin.com', 'testnet-dnsseed.redd.ink'],
   versions: {
+    // https://github.com/reddcoin-project/reddcoin/blob/master/src/chainparams.cpp#L384
+    bip32: {
+      private: 0x04358394,
+      public: 0x043587cf,
+    },
     bip44: 1,
     private: 0xef,
     public: 0x6f,
