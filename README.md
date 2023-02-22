@@ -74,6 +74,22 @@ btc: {
 - [Vertcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/vtc.ts) (VTC)
 - [x42](https://github.com/hyperbit-dev/chains/blob/master/src/chains/x42.ts) (x42)
 
+## Usage with BitcoinJS and Bitcore
+
+You can pass in your desired coin to make it compatible with [bitcoinjs-lib](https://github.com/bitcoinjs/bitcoinjs-lib) or [bitcore](https://github.com/bitpay/bitcore) by making use of to additional utility functions.
+
+```javascript
+import { btc, toBitcoinJS, toBitcore } from '@hyperbitjs/chains';
+
+const { main, test } = btc;
+
+const btcBitcoinJSMain = toBitcoinJS(main, 'main');
+const btcBitcoinJSTest = toBitcoinJS(test, 'test');
+
+const btcBitCoreMain = toBitCore(main, 'main');
+const btcBitCoreTest = toBitCore(test, 'test');
+```
+
 ## Contributing
 
 If you're interested in contributing, please read the [contributing docs](https://github.com/hyperbit-dev/chains/blob/master/CONTRIBUTING.md) before submitting a pull request.
