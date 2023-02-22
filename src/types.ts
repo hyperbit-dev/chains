@@ -50,6 +50,8 @@ export type BitcoinJS = (Network | TestNetwork) & {
 };
 
 export type BitCore = (Network | TestNetwork) & {
+  name: string;
+  alias: string;
   networkMagic: number;
   pubkeyhash: number;
   privatekey: number;

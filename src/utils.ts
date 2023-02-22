@@ -17,7 +17,10 @@ export function toBitcoinJS(chain: Network | TestNetwork): BitcoinJS {
   };
 }
 
-export function toBitcore(chain: Network | TestNetwork) {
+export function toBitcore(
+  chain: Network | TestNetwork,
+  network: 'main' | 'test'
+) {
   // reverse magic
   const buf = Buffer.allocUnsafe(4);
   buf.writeUInt32BE(chain?.protocol?.magic ?? 0);
@@ -25,6 +28,8 @@ export function toBitcore(chain: Network | TestNetwork) {
 
   return {
     ...chain,
+    name: network === 'test' ? 'testnet' : 'livenet',
+    alias: network === 'test' ? 'testnet' : 'mainnet',
     pubkeyhash: chain.versions.public,
     privatekey: chain.versions.private,
     scripthash: chain.versions.scripthash,
