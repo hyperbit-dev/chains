@@ -86,8 +86,8 @@ const { main, test } = btc;
 const btcBitcoinJSMain = toBitcoinJS(main, 'main');
 const btcBitcoinJSTest = toBitcoinJS(test, 'test');
 
-const btcBitCoreMain = toBitCore(main, 'main');
-const btcBitCoreTest = toBitCore(test, 'test');
+const btcBitcoreMain = toBitcore(main, 'main');
+const btcBitcoreTest = toBitcore(test, 'test');
 ```
 
 ## Contributing
