@@ -1,4 +1,4 @@
-/* source: https://github.com/EvrmoreOrg/Evrmore/blob/develop/src/chainparams.cpp */
+// source: https://github.com/EvrmoreOrg/Evrmore
 
 import { Common, Network, TestNetwork } from '../types';
 
