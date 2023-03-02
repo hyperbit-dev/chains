@@ -10,6 +10,7 @@ export * from './dgb';
 export * from './dnr';
 export * from './doge';
 export * from './evr';
+export * from './ftc';
 export * from './grs';
 export * from './ltc';
 export * from './mewc';
