@@ -1337,3 +1337,4 @@ If you're interested in contributing, please read the [contributing docs](https:
 | QKC        | QuarkChain                                                                           |               |
 | FVDC       | ForumCoin                                                                            |               |
 |            | Fuel                                                                                 |               |
+| XNA        | [Neurai](https://github.com/NeuraiProject/chains/blob/master/src/chains/xna.ts)      | Yes           |
