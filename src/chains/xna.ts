@@ -1,4 +1,4 @@
-/* source: https://github.com/RavenProject/Ravencoin/blob/master/src/chainparams.cpp */
+/* source: https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp */
 
 import { Common, Network, TestNetwork } from '../types';
 
@@ -6,23 +6,23 @@ const common: Common = {
   name: 'Neurai',
   unit: 'XNA',
   decimalPlaces: 1e8,
-  // https://github.com/NeuraiProject/Neurai/blob/master/src/validation.cpp#L129
+  // https://github.com/NeuraiProject/Neurai/blob/main/src/validation.cpp#L129
   messagePrefix: 'Neurai Signed Message:\n',
 };
 
 const main: Network = {
   ...common,
-  // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L179
+  // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L179
   hashGenesisBlock:
     '00000044d33c0c0ba019be5c0249730424a69cb4c222153322f68c6104484806',
-  // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L172
+  // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L172
   port: 19000,
-  // https://github.com/NeuraiProject/Neurai/blob/master/src//chainparamsbase.cpp#L36
+  // https://github.com/NeuraiProject/Neurai/blob/main/src//chainparamsbase.cpp#L36
   portRpc: 19001,
   protocol: {
     magic: 0x5255454e,
   },
-  // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L182
+  // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L182
   seedsDns: [
     'seed1.neurai.org',
     'seed2.neurai.org',
@@ -34,13 +34,13 @@ const main: Network = {
       private: 0x0488ade4,
       public: 0x0488b21e,
     },
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L200
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L200
     bip44: 0,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L195
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L195
     private: 0x80,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L193
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L193
     public: 0x35,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L194
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L194
     scripthash: 0x75,
   },
 };
@@ -66,11 +66,11 @@ const test: TestNetwork = {
       public: 0x043587cf,
     },
     bip44: 0,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L423
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L423
     private: 0xef,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L359
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L359
     public: 0xeb,
-    // https://github.com/NeuraiProject/Neurai/blob/master/src/chainparams.cpp#L422
+    // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L422
     scripthash: 0xc4,
   },
 };

@@ -364,7 +364,7 @@ If you're interested in contributing, please read the [contributing docs](https:
 | BZX        | Bitcoinzero                                                                           |               |
 | GXX        | GravityCoin                                                                           |               |
 | HEAT       | HEAT                                                                                  |               |
-| XDN        | DigitalNote                                                                           |               |
+| XDN        | [Digital Note](https://github.com/hyperbit-dev/chains/blob/master/src/chains/xdn.ts)  | Yes           |
 | FSN        | FUSION                                                                                |               |
 | CPC        | Capricoin                                                                             |               |
 | BOLD       | Bold                                                                                  |               |
