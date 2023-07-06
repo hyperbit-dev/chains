@@ -26,5 +26,6 @@ export * from './rvn';
 export * from './via';
 export * from './vtc';
 export * from './x42';
+export * from './xdn';
 export * from './xna';
 export * from './zec';
