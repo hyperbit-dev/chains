@@ -206,7 +206,7 @@ If you're interested in contributing, please read the [contributing docs](https:
 | VC         | Vcash                                                                                 |               |
 | XMR        | Monero                                                                                |               |
 | VOX        | Voxels                                                                                |               |
-| NAV        | [Navcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nav.ts)       |               |
+| NAV        | [Navcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nav.ts)       | Yes           |
 | FCT        | Factom Factoids                                                                       |               |
 | EC         | Factom Entry Credits                                                                  |               |
 | ZEC        | [Zcash](https://github.com/hyperbit-dev/chains/blob/master/src/chains/zec.ts)         |               |
