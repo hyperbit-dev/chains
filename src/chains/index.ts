@@ -18,6 +18,7 @@ export * from './mona';
 export * from './nav';
 export * from './nbt';
 export * from './nmc';
+export * from './pgn';
 export * from './ppc';
 export * from './qtum';
 export * from './rdd';

@@ -82,6 +82,7 @@ If you're interested in contributing, please read the [contributing docs](https:
 | DOGE       | [Dogecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/doge.ts)     | Yes           |
 | RDD        | [Reddcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/rdd.ts)      | Yes           |
 | DASH       | [Dash](https://github.com/hyperbit-dev/chains/blob/master/src/chains/dash.ts)         | Yes           |
+| PGN        | [Pigeon](https://github.com/hyperbit-dev/chains/blob/master/src/chains/pgn)           | Yes           |
 | PPC        | [Peercoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/ppc.ts)      | Yes           |
 | NMC        | [Namecoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/nmc.ts)      | Yes           |
 | FTC        | [Feathercoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/ftc.ts)   | Yes           |
