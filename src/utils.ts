@@ -4,7 +4,8 @@ export function toBitcoinJS(chain: Network | TestNetwork): BitcoinJS {
   return {
     ...chain,
     messagePrefix:
-      chain.messagePrefix || '\x19' + chain.name + ' Signed Message:\n',
+      chain.messagePrefix ||
+      '\x19' + (chain?.messageName ?? chain.name) + ' Signed Message:\n',
     bech32: chain.bech32,
     bip32: {
       public: chain.versions.bip32.public,

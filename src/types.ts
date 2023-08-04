@@ -15,6 +15,7 @@ export type Versions = {
 
 export type Common = {
   name: string;
+  messageName?: string; // Message name can be different than the name (e.g. Pigeon => DarkCoin)
   unit: string;
   decimalPlaces: number;
   messagePrefix?: string;
