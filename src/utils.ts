@@ -1,43 +1,45 @@
-import { BitcoinJS, Network, TestNetwork } from './types';
+import { BitcoinJS, MainNet, TestNet, RegTest, SimNet } from './types';
 
-export function toBitcoinJS(chain: Network | TestNetwork): BitcoinJS {
+export function toBitcoinJS(
+  network: MainNet | TestNet | RegTest | SimNet
+): BitcoinJS {
   return {
-    ...chain,
+    ...network,
     messagePrefix:
-      chain.messagePrefix ||
-      '\x19' + (chain?.messageName ?? chain.name) + ' Signed Message:\n',
-    bech32: chain.bech32,
+      network.messagePrefix ||
+      '\x19' + (network?.messageName ?? network.name) + ' Signed Message:\n',
+    bech32: network.bech32,
     bip32: {
-      public: chain.versions.bip32.public,
-      private: chain.versions.bip32.private,
+      public: network.versions.bip32.public,
+      private: network.versions.bip32.private,
     },
-    pubKeyHash: chain.versions.public,
-    scriptHash: chain.versions.scripthash,
-    wif: chain.versions.private,
+    pubKeyHash: network.versions.public,
+    scriptHash: network.versions.scripthash,
+    wif: network.versions.private,
     dustThreshold: null, // TODO
   };
 }
 
 export function toBitcore(
-  chain: Network | TestNetwork,
-  network: 'main' | 'test'
+  network: MainNet | TestNet | RegTest | SimNet,
+  name: 'mainnet' | 'testnet' | 'regtest' | 'simnet'
 ) {
   // reverse magic
   const buf = Buffer.allocUnsafe(4);
-  buf.writeUInt32BE(chain?.protocol?.magic ?? 0);
+  buf.writeUInt32BE(network?.protocol?.magic ?? 0);
   const networkMagic = buf.readUInt32LE(0);
 
   return {
-    ...chain,
-    name: network === 'test' ? 'testnet' : 'livenet',
-    alias: network === 'test' ? 'testnet' : 'mainnet',
-    pubkeyhash: chain.versions.public,
-    privatekey: chain.versions.private,
-    scripthash: chain.versions.scripthash,
-    xpubkey: chain.versions.bip32.public,
-    xprivkey: chain.versions.bip32.private,
+    ...network,
+    name: name === 'testnet' ? 'testnet' : 'livenet',
+    alias: name === 'testnet' ? 'testnet' : 'mainnet',
+    pubkeyhash: network.versions.public,
+    privatekey: network.versions.private,
+    scripthash: network.versions.scripthash,
+    xpubkey: network.versions.bip32.public,
+    xprivkey: network.versions.bip32.private,
     networkMagic,
-    port: chain.port,
-    dnsSeeds: chain.seedsDns || [],
+    port: network.port,
+    dnsSeeds: network.seedsDns || [],
   };
 }

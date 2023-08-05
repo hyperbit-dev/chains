@@ -4,7 +4,7 @@ import { chains } from '../src';
 describe('chains', () => {
   it('should export coins properly', () => {
     expect(typeof btc).toBe('object');
-    expect(btc.main.name).toBe('Bitcoin');
+    expect(btc.mainnet.name).toBe('Bitcoin');
   });
 
   it('should export all coins to chains', () => {

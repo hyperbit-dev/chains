@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,7 +20,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -52,6 +51,7 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
+    "@types/jest": "^29.5.3",
     "husky": "^8.0.2",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
@@ -60,6 +60,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {}
+  }
 }
