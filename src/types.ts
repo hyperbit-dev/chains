@@ -25,7 +25,7 @@ export type Common = {
   bech32?: string;
 };
 
-export type Network = Common & {
+export type MainNet = Common & {
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
@@ -34,7 +34,7 @@ export type Network = Common & {
   versions: Versions;
 };
 
-export type TestNetwork = Common & {
+export type TestNet = Common & {
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
@@ -42,7 +42,17 @@ export type TestNetwork = Common & {
   versions: Versions;
 };
 
-export type BitcoinJS = (Network | TestNetwork) & {
+export type RegTest = TestNet;
+export type SimNet = TestNet;
+
+export type Networks = {
+  mainnet: MainNet;
+  testnet?: TestNet;
+  regtest?: RegTest;
+  simnet?: SimNet;
+};
+
+export type BitcoinJS = (MainNet | TestNet) & {
   bip32: Bip32;
   pubKeyHash: number;
   scriptHash: number;
@@ -50,7 +60,7 @@ export type BitcoinJS = (Network | TestNetwork) & {
   dustThreshold: null;
 };
 
-export type BitCore = (Network | TestNetwork) & {
+export type BitCore = (MainNet | TestNet) & {
   name: string;
   alias: string;
   networkMagic: number;
