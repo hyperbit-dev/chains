@@ -1,8 +1,9 @@
-import { TestNet } from '../../types';
+import { TestNet } from '../../types/base';
 import { common } from './base';
 
 export const testnet: TestNet = {
   ...common,
+  id: '457C71FE-A732-4208-A469-22FD6107EE8C',
   // https://github.com/JustAResearcher/Meowcoin/blob/master/src/chainparams.cpp#L348
   hashGenesisBlock:
     '0x000000eaab417d6dfe9bd75119972e1d07ecfe8ff655bef7c2acb3d9a0eeed81',

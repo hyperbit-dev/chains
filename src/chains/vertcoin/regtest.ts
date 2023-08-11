@@ -1,8 +1,9 @@
-import { RegTest } from '../../types';
+import { RegTest } from '../../types/base';
 import { common } from './base';
 
 export const regtest: RegTest = {
   ...common,
+  id: '1F1F20A5-097A-43FC-8CCE-79BE5EB2ABE3',
   hashGenesisBlock:
     '0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206',
   port: 18444,

@@ -1,4 +1,4 @@
-import { Common } from '../../types';
+import { Common } from '../../types/base';
 
 export const common: Common = {
   name: 'Evrmore',

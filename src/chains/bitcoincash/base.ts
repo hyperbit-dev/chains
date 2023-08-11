@@ -1,5 +1,5 @@
 /* source: https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/src/chainparams.cpp */
-import { Common } from '../../types';
+import { Common } from '../../types/base';
 
 export const common: Common = {
   name: 'BitcoinCash',

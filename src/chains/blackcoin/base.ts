@@ -1,6 +1,6 @@
 /* source: https://github.com/rat4/blackcoin/blob/master/src/chainparams.cpp */
 
-import { Common } from '../../types';
+import { Common } from '../../types/base';
 
 export const common: Common = {
   name: 'BlackCoin',

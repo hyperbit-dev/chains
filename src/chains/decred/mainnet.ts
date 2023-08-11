@@ -1,10 +1,11 @@
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 // https://github.com/decred/dcrd/blob/ef71103c95cbf77e5a0418e3d413b5906e710b25/chaincfg/params.go
 // https://github.com/decred/bitcore/blob/a92381b2b0023b28a1b7eb03e6cb0bfb7800200d/lib/networks.js
 export const mainnet: MainNet = {
   ...common,
+  id: '62FF2E12-60EA-4C2F-B0BD-C0526403F53D',
   hashGenesisBlock:
     '298e5cc3d985bfe7f81dc135f360abe089edd4396b86d2de66b0cef42b21d980',
   port: 9108,

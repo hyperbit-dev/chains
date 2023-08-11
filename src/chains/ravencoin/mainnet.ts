@@ -1,8 +1,9 @@
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 export const mainnet: MainNet = {
   ...common,
+  id: 'A1AC99E9-7285-4C81-8FE6-BF298E32E597',
   // https://github.com/RavenProject/Ravencoin/blob/master/src/chainparams.cpp#L188
   hashGenesisBlock:
     '0000006b444bc2f2ffe627be9d9e7e7a0730000870ef6eb6da46c8eae389df90',
