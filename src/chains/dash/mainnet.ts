@@ -1,8 +1,9 @@
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 export const mainnet: MainNet = {
   ...common,
+  id: '6C9306C2-B4A9-4FF2-B2FB-9ABA8EAABEC3',
   hashGenesisBlock:
     '00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6',
   // nDefaultPort

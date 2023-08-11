@@ -1,10 +1,11 @@
 /** source: https://github.com/reddcoin-project/reddcoin/blob/master/src/chainparams.cpp */
 
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 export const mainnet: MainNet = {
   ...common,
+  id: 'A0F1B6CA-5A6E-4D09-8334-EE5C9AC4C21D',
   hashGenesisBlock:
     'b868e0d95a3c3c0e0dadc67ee587aaf9dc8acbf99e3b4b3110fad4eb74c1decc',
   port: 45444,

@@ -1,8 +1,9 @@
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 export const mainnet: MainNet = {
   ...common,
+  id: '9BBB6BBE-D8E4-4EB6-AA38-FBAAB65627BA',
   // https://github.com/navcoin/navcoin-core/blob/master/src/chainparams.cpp#L294
   hashGenesisBlock:
     '0x00006a4e3e18c71c6d48ad6c261e2254fa764cf29607a4357c99b712dfbb8e6a',

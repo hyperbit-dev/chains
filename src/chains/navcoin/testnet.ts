@@ -1,8 +1,9 @@
-import { TestNet } from '../../types';
+import { TestNet } from '../../types/base';
 import { common } from './base';
 
 export const testnet: TestNet = {
   ...common,
+  id: 'BB7AADDB-AE77-4E82-9FEB-34CD9A66BA1C',
   // https://github.com/navcoin/navcoin-core/blob/master/src/chainparams.cpp#L569
   hashGenesisBlock:
     '0x0000f8186df4648c46f445a25decd423fa6b62ed220849093f73f6f364116894',

@@ -1,8 +1,9 @@
-import { TestNet } from '../../types';
+import { TestNet } from '../../types/base';
 import { common } from './base';
 
 export const testnet: TestNet = {
   ...common,
+  id: 'E3052A5E-648B-4A79-A48B-AFA4C3CCD175',
   // https://github.com/DigitalNoteXDN/DigitalNote-2/blob/master/src/ctestnetparams.cpp
   hashGenesisBlock:
     '0x000510a669c8d36db04317fa98f7bf183d18c96cef5a4a94a6784a2c47f92e6c',

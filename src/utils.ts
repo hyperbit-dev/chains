@@ -1,4 +1,4 @@
-import { BitcoinJS, MainNet, TestNet, RegTest, SimNet } from './types';
+import { BitcoinJS, MainNet, TestNet, RegTest, SimNet } from './types/base';
 
 export function toBitcoinJS(
   network: MainNet | TestNet | RegTest | SimNet

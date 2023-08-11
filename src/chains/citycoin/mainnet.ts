@@ -1,8 +1,9 @@
-import { MainNet } from '../../types';
+import { MainNet } from '../../types/base';
 import { common } from './base';
 
 export const mainnet: MainNet = {
   ...common,
+  id: 'EE15B76D-FA2E-4346-B3ED-678716DA5B6A',
   unit: 'CITY',
   hashGenesisBlock:
     '00000b0517068e602ed5279c20168cfa1e69884ee4e784909652da34c361bff2',

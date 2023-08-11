@@ -1,8 +1,9 @@
-import { TestNet } from '../../types';
+import { TestNet } from '../../types/base';
 import { common } from './base';
 
 export const testnet: TestNet = {
   ...common,
+  id: '83D6D590-B6E0-40A6-AB07-3756618DEF92',
   hashGenesisBlock:
     '00000001f757bb737f6596503e17cd17b0658ce630cc727c0cca81aec47c9f06',
   port: 9903,

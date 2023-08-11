@@ -1,6 +1,6 @@
 /* source: https://github.com/RavenProject/Ravencoin/blob/master/src/chainparams.cpp */
 
-import { Common } from '../../types';
+import { Common } from '../../types/base';
 
 export const common: Common = {
   name: 'Ravencoin',

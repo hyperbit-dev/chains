@@ -26,6 +26,7 @@ export type Common = {
 };
 
 export type MainNet = Common & {
+  id: string;
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
@@ -35,6 +36,7 @@ export type MainNet = Common & {
 };
 
 export type TestNet = Common & {
+  id: string;
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
