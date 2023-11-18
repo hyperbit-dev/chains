@@ -4,6 +4,7 @@ import { common } from './base';
 export const testnet: TestNet = {
   ...common,
   id: 'AEE56E37-B187-403F-8CF1-5D18BF7ED553',
+  network: 'testnet',
   hashGenesisBlock:
     'f5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f',
   port: 19335,

@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '9D224C99-16BC-48E2-93EC-24FE78EFA1E0',
+  network: 'mainnet',
   // https://github.com/DigitalNoteXDN/DigitalNote-2/blob/master/src/cmainparams.cpp#L85
   hashGenesisBlock:
     '0x00000d8e7d39218c4c02132e95a3896d46939b9b95624cf9dd2b0b794e6c216a',

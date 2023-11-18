@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '94C49B3B-2C88-4408-B566-3D277C596778',
+  network: 'mainnet',
   // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L179
   hashGenesisBlock:
     '00000044d33c0c0ba019be5c0249730424a69cb4c222153322f68c6104484806',

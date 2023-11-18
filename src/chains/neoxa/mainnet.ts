@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '58CFFA6F-F50F-4638-8172-960A4F871FF9',
+  network: 'mainnet',
   // https://github.com/NeoxaChain/Neoxa/blob/main/src/chainparams.cpp#L446
   hashGenesisBlock:
     '0000000a50fdaaf22f1c98b8c61559e15ab2269249aa1fb20683180703cdbf07',

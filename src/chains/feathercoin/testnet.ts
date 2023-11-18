@@ -4,6 +4,7 @@ import { common } from './base';
 export const testnet: TestNet = {
   ...common,
   id: '3AB92BB0-BDC3-4FC1-AB47-7943CA13D064',
+  network: 'testnet',
   // https://github.com/FeatherCoin/Feathercoin/blob/master/src/chainparams.cpp#L221
   hashGenesisBlock:
     '0x79e4683a94fb0374ac9d52638b594dcf0318975acb8b275e280f93c082c0964c',

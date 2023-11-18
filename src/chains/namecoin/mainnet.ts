@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: 'A48ADAD7-E9E8-4A60-88B3-0A3371822C4B',
+  network: 'mainnet',
   hashGenesisBlock:
     '000000000062b72c5e2ceb45fbc8587e807c155b0da735e6483dfba2f0a9c770',
   // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparamsbase.cpp#L48

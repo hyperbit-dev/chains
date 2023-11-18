@@ -6,6 +6,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '8587F97F-32F3-4F68-9426-447653FA183C',
+  network: 'mainnet',
   // https://github.com/RitoProject/Ritocoin/blob/master/src/chainparams.cpp#L161
   hashGenesisBlock:
     '00000075e344bdf1c0e433f453764b1830a7aa19b2a5213e707502a22b779c1b',

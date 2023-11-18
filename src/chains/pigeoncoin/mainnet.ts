@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '43D9A3E2-1D4A-420F-BF0B-503E15BCB211',
+  network: 'mainnet',
   // https://github.com/Pigeoncoin/pigeoncoin/blob/master/src/chainparams.cpp#L345
   hashGenesisBlock:
     '0x000000f049bef9fec0179131874c54c76c0ff59f695db30a4f0da52072c99492',
