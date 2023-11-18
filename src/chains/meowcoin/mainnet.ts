@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '340D72AA-B588-4AE4-9B08-99E65A61EB5F',
+  network: 'mainnet',
   // https://github.com/JustAResearcher/Meowcoin/blob/master/src/chainparams.cpp#L178
   hashGenesisBlock:
     '0x000000edd819220359469c54f2614b5602ebc775ea67a64602f354bdaa320f70',

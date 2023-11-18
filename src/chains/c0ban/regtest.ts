@@ -4,6 +4,7 @@ import { common } from './base';
 export const regtest: RegTest = {
   ...common,
   id: 'EE9BB417-986B-4B72-A197-947D5AA5C260',
+  network: 'regtest',
   hashGenesisBlock:
     '3249e44acac8fc67e6b94e882525cea6f5a9853e1ff7b4a1d5f470b23ff8ae11',
   port: 23881,

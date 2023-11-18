@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: 'DA217E32-4468-443D-992F-08E7A8292346',
+  network: 'mainnet',
   hashGenesisBlock:
     '0000000032fe677166d54963b62a4677d8957e87c508eaa4fd7eb1c880cd27e3', // main.h:84
   // nDefaultPort

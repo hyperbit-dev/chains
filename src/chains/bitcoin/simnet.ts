@@ -5,6 +5,7 @@ import { common } from './base';
 export const simnet: SimNet = {
   ...common,
   id: '36F2C046-D941-411B-B94B-5B6033844241',
+  network: 'simnet',
   hashGenesisBlock:
     'f67ad7695d9b662a72ff3d8edbbb2de0bfa67b13974bb9910d116d5cbd863e68',
   port: 18555,

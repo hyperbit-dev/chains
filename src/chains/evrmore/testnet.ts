@@ -4,6 +4,7 @@ import { common } from './base';
 export const testnet: TestNet = {
   ...common,
   id: '6A37B111-864F-4104-B396-C6CD7B15A5FA',
+  network: 'testnet',
   // https://github.com/EvrmoreOrg/Evrmore/blob/develop/src/chainparams.cpp#L418
   hashGenesisBlock:
     '00000044bc03f8460e64bc07b080f4929b1cb96fda46b8bd806e57bfb9db82f4',

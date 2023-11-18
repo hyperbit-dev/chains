@@ -4,6 +4,7 @@ import { common } from './base';
 export const testnet: TestNet = {
   ...common,
   id: 'CC712380-530A-4612-879D-40096E5B7919',
+  network: 'testnet',
   // https://github.com/namecoin/namecoin-core/blob/e17ed0e82e5d7696018a83f8a1df75a54355a22d/src/chainparams.cpp#L319
   hashGenesisBlock:
     '00000007199508e34a9ff81e6ec0c477a4cccff2a4767a8eee39c11db367b008',

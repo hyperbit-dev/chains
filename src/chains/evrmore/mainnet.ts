@@ -4,6 +4,7 @@ import { common } from './base';
 export const mainnet: MainNet = {
   ...common,
   id: '3E6BE753-F659-4D53-BF0E-AD550513836D',
+  network: 'mainnet',
   // https://github.com/EvrmoreOrg/Evrmore/blob/develop/src/chainparams.cpp#L262
   hashGenesisBlock:
     '0000007b11d0481b2420a7c656ef76775d54ab5b29ee7ea250bc768535693b05',

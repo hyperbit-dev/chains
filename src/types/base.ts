@@ -27,6 +27,7 @@ export type Common = {
 
 export type MainNet = Common & {
   id: string;
+  network: 'mainnet';
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
@@ -37,6 +38,7 @@ export type MainNet = Common & {
 
 export type TestNet = Common & {
   id: string;
+  network: 'testnet';
   hashGenesisBlock: string;
   port: number;
   portRpc: number;
@@ -44,8 +46,12 @@ export type TestNet = Common & {
   versions: Versions;
 };
 
-export type RegTest = TestNet;
-export type SimNet = TestNet;
+export type RegTest = Omit<TestNet, 'network'> & {
+  network: 'regtest';
+};
+export type SimNet = Omit<TestNet, 'network'> & {
+  network: 'simnet';
+};
 
 export type Networks = {
   mainnet: MainNet;
