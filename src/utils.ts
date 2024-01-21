@@ -22,17 +22,22 @@ export function toBitcoinJS(
 
 export function toBitcore(
   network: MainNet | TestNet | RegTest | SimNet,
-  name: 'mainnet' | 'testnet' | 'regtest' | 'simnet'
+  name?: 'mainnet' | 'testnet' | 'regtest' | 'simnet'
 ) {
   // reverse magic
   const buf = Buffer.allocUnsafe(4);
   buf.writeUInt32BE(network?.protocol?.magic ?? 0);
   const networkMagic = buf.readUInt32LE(0);
 
+  const bitcoreName =
+    name === 'testnet' || network.network === 'testnet' ? 'testnet' : 'livenet';
+  const alias =
+    name === 'testnet' || network.network === 'testnet' ? 'testnet' : 'mainnet';
+
   return {
     ...network,
-    name: name === 'testnet' ? 'testnet' : 'livenet',
-    alias: name === 'testnet' ? 'testnet' : 'mainnet',
+    name: bitcoreName,
+    alias,
     pubkeyhash: network.versions.public,
     privatekey: network.versions.private,
     scripthash: network.versions.scripthash,

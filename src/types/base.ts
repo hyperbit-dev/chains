@@ -53,14 +53,12 @@ export type SimNet = Omit<TestNet, 'network'> & {
   network: 'simnet';
 };
 
-export type Networks = {
-  mainnet: MainNet;
-  testnet?: TestNet;
-  regtest?: RegTest;
-  simnet?: SimNet;
-};
+export type Networks = Record<
+  'mainnet' | 'testnet' | 'regtest' | 'simnet',
+  MainNet | TestNet | RegTest | SimNet
+>;
 
-export type BitcoinJS = (MainNet | TestNet) & {
+export type BitcoinJS = (MainNet | TestNet | RegTest | SimNet) & {
   bip32: Bip32;
   pubKeyHash: number;
   scriptHash: number;
@@ -68,7 +66,7 @@ export type BitcoinJS = (MainNet | TestNet) & {
   dustThreshold: null;
 };
 
-export type BitCore = (MainNet | TestNet) & {
+export type BitCore = (MainNet | TestNet | RegTest | SimNet) & {
   name: string;
   alias: string;
   networkMagic: number;
