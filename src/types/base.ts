@@ -53,10 +53,7 @@ export type SimNet = Omit<TestNet, 'network'> & {
   network: 'simnet';
 };
 
-export type Networks = Record<
-  'mainnet' | 'testnet' | 'regtest' | 'simnet',
-  MainNet | TestNet | RegTest | SimNet
->;
+export type Networks = Record<string, MainNet | TestNet | RegTest | SimNet>;
 
 export type BitcoinJS = (MainNet | TestNet | RegTest | SimNet) & {
   bip32: Bip32;
