@@ -23,7 +23,7 @@ export const testnet: TestNet = {
       private: 0x04358394,
       public: 0x043587cf,
     },
-    bip44: 0,
+    bip44: 1,
     // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L423
     private: 0xef,
     // https://github.com/NeuraiProject/Neurai/blob/main/src/chainparams.cpp#L359
