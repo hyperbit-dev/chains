@@ -6,5 +6,6 @@ export const common: Common = {
   name: 'BlackCoin',
   decimalPlaces: 1e8,
   unit: 'BLK',
+  symbol: 'blk',
   messagePrefix: 'BlackCoin Signed Message:\n',
 };
