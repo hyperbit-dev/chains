@@ -1,8 +1,9 @@
 import { Common } from '../../types/base';
 
 export const common: Common = {
-  name: 'Monacoin',
+  name: 'MonaCoin',
   unit: 'MONA',
+  symbol: 'mona',
   decimalPlaces: 1e8,
   /** https://github.com/monacoinproject/monacoin/blob/master-0.20.3/src/util/message.cpp#L22 */
   messagePrefix: 'Monacoin Signed Message:\n',

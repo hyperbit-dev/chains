@@ -17,6 +17,7 @@ export type Common = {
   name: string;
   messageName?: string; // Message name can be different than the name (e.g. Pigeon => DarkCoin)
   unit: string;
+  symbol: string;
   decimalPlaces: number;
   messagePrefix?: string;
   messagePrefixAlts?: string[];

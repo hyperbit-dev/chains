@@ -4,6 +4,7 @@ export const common: Common = {
   name: 'Bitcoin',
   decimalPlaces: 1e8,
   unit: 'BTC',
+  symbol: 'btc',
   /** https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/src/networks.js#L5 */
   messagePrefix: '\u0018Bitcoin Signed Message:\n',
   messagePrefixAlts: [
