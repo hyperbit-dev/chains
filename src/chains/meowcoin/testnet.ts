@@ -11,7 +11,7 @@ export const testnet: TestNet = {
   // https://github.com/JustAResearcher/Meowcoin/blob/master/src/chainparams.cpp#L340
   port: 4568,
   // https://github.com/JustAResearcher/Meowcoin/blob/master/src/chainparamsbase.cpp#L49
-  portRpc: 19766,
+  portRpc: 18766,
   protocol: {
     // https://github.com/JustAResearcher/Meowcoin/blob/master/src/chainparams.cpp#L336
     magic: 0x6377656d,
