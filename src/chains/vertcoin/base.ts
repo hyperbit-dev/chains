@@ -8,4 +8,6 @@ export const common: Common = {
   /** https://github.com/vertcoin-project/vertcoin-core/blob/master/src/util/message.cpp#L22 */
   messagePrefix: 'Bitcoin Signed Message:\n',
   messageName: 'Bitcoin Signed Message:\n',
+  // https://github.com/vertcoin-project/vertcoin-core/blob/master/src/qt/transactionrecord.h#L85
+  confirmations: 6,
 };

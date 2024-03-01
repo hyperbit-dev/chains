@@ -7,4 +7,7 @@ export const common: Common = {
   unit: 'BCH',
   symbol: 'bch',
   messagePrefix: 'eCash Signed Message:\n',
+  // https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/src/qt/transactionrecord.h#L100
+  algorithm: 'zhash',
+  confirmations: 6
 };

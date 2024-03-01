@@ -10,4 +10,6 @@ export const common: Common = {
   // https://github.com/Pigeoncoin/pigeoncoin/blob/master/src/validation.cpp#L119
   messagePrefix: 'DarkCoin Signed Message:\n',
   messageName: 'DarkCoin',
+  // https://github.com/Pigeoncoin/pigeoncoin/blob/master/src/qt/transactionrecord.h#L103
+  confirmations: 6,
 };

@@ -9,4 +9,7 @@ export const common: Common = {
   decimalPlaces: 1e8,
   // https://github.com/NeoxaChain/Neoxa/blob/main/src/validation.cpp#L119
   messagePrefix: 'Neoxa Signed Message:\n',
+  algorithm: 'kawpow',
+  // https://github.com/NeoxaChain/Neoxa/blob/main/src/qt/transactionrecord.h#L107
+  confirmations: 6,
 };

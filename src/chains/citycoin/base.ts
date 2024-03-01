@@ -5,5 +5,6 @@ export const common: Common = {
   unit: 'CITY',
   symbol: 'city',
   decimalPlaces: 1e8,
-  isProofOfStake: true,
+  consensus: 'PoS',
+  confirmations: 6,
 };

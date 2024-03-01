@@ -5,5 +5,5 @@ export const common: Common = {
   unit: 'X42',
   symbol: 'symbol',
   decimalPlaces: 1e8,
-  isProofOfStake: true,
+  consensus: 'PoS',
 };
