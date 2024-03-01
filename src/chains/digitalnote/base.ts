@@ -6,4 +6,6 @@ export const common: Common = {
   symbol: 'xdn',
   decimalPlaces: 1e8,
   messagePrefix: '\x16Digital Note Signed Message:\n',
+  // https://github.com/DigitalNoteXDN/DigitalNote-2/blob/master/src/qt/transactionrecord.h#L86
+  confirmations: 10,
 };

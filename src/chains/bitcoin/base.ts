@@ -13,4 +13,6 @@ export const common: Common = {
     '\x18Bitcoin Signed Message:\n',
     '\x19Bitcoin Signed Message:\n',
   ],
+  // https://github.com/bitcoin/bitcoin/blob/01e1627e25bc5477c40f51da03c3c31b609a85c9/src/qt/transactionrecord.h#L76
+  confirmations: 6
 };

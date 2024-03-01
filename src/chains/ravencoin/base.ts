@@ -11,4 +11,7 @@ export const common: Common = {
   decimalPlaces: 1e8,
   // https://github.com/RavenProject/Ravencoin/blob/c8197cd15d8886dc5c6121e3ba3f39c92445fc1b/src/validation.cpp#L129
   messagePrefix: '\x16Raven Signed Message:\n',
+  algorithm: 'kawpow',
+  // https://github.com/RavenProject/Ravencoin/blob/e48d932ec70267a62ec3541bdaf4fe022c149f0e/src/qt/transactionrecord.h#L88
+  confirmations: 6,
 };
