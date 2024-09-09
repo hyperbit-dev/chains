@@ -1,7 +1,7 @@
 import { Common } from '../../types/base';
 
 export const common: Common = {
-  name: 'MeowCoin',
+  name: 'Meowcoin',
   unit: 'MEWC',
   symbol: 'mewc',
   decimalPlaces: 1e8,
