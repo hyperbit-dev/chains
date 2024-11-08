@@ -1128,6 +1128,7 @@ If you're interested in contributing, please read the [contributing docs](https:
 | BTA        | Btachain                                                                                  |               |
 | BCX        | BitcoinX                                                                                  |               |
 | MEWC       | [Meowcoin](https://github.com/hyperbit-dev/chains/blob/master/src/chains/meowcoin)        | Yes           |
+| TLS        | Telestai                                                                                  |               |
 | XTZ        | Tezos                                                                                     |               |
 | LBTC       | Liquid BTC                                                                                |               |
 | BBP        | Biblepay                                                                                  |               |
