@@ -112,6 +112,7 @@ export type Algorithm =
   | 'lbry'
   | 'lyra2re'
   | 'lyra2z'
+  | 'meraki'
   | 'meowpow'
   | 'minotaur'
   | 'minotaurx'
