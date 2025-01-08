@@ -26,6 +26,7 @@ export * from './qtum';
 export * from './ravencoin';
 export * from './reddcoin';
 export * from './ritocoin';
+export * from './telestai';
 export * from './vertcoin';
 export * from './viacoin';
 export * from './x42';
