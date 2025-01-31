@@ -87,18 +87,18 @@ export function getChainNames(): string[] {
 }
 
 /**
- * Return Networks by the blockchain symbol. If network is provided, return only the network with the given network.
- * @param symbol e.g. btc
+ * Return Networks by the blockchain network. If symbol is provided, return only the network with the given symbol.
  * @param network e.g. mainnet
+ * @param symbol e.g. btc
  * @returns Network[]
  */
-export function getChainsByNetwork(symbol: string, network?: string): Network[] {
+export function getChainsByNetwork(network: string, symbol?: string): Network[] {
   return Object.keys(chains).reduce<Network[]>(
     (acc: Network[], key: string) => {
-      const n = chains[key][symbol];
+      const n = chains[key][network];
       if (n) {
-        if (network) {
-          if (n.network === network) {
+        if (symbol) {
+          if (n.symbol === symbol) {
             return [...acc, n];
           }
           return acc;
