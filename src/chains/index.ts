@@ -18,6 +18,7 @@ export * from './meowcoin';
 export * from './monacoin';
 export * from './namecoin';
 export * from './navcoin';
+export * from './neoxa';
 export * from './neurai';
 export * from './nubits';
 export * from './peercoin';
