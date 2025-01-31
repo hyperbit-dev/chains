@@ -69,9 +69,9 @@ export function findNetworkById(id: string): Network | undefined {
   return undefined;
 }
 
-export function getChainIds(network: string): string[] {
+export function getChainIds(symbol: string): string[] {
   return Object.keys(chains).reduce<string[]>((acc: string[], key: string) => {
-    const n = chains[key][network];
+    const n = chains[key][symbol];
     if (n) {
       return [...acc, n.id];
     }
@@ -86,11 +86,23 @@ export function getChainNames(): string[] {
   }, []);
 }
 
-export function getChainsByNetwork(network: string): Network[] {
+/**
+ * Return Networks by the blockchain symbol. If network is provided, return only the network with the given network.
+ * @param symbol e.g. btc
+ * @param network e.g. mainnet
+ * @returns Network[]
+ */
+export function getChainsByNetwork(symbol: string, network?: string): Network[] {
   return Object.keys(chains).reduce<Network[]>(
     (acc: Network[], key: string) => {
-      const n = chains[key][network];
+      const n = chains[key][symbol];
       if (n) {
+        if (network) {
+          if (n.network === network) {
+            return [...acc, n];
+          }
+          return acc;
+        }
         return [...acc, n];
       }
       return acc;
