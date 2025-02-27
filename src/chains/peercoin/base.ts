@@ -10,4 +10,6 @@ export const common: Common = {
   messagePrefixAlts: ['\x18Peercoin Signed Message:\n'],
   // https://github.com/peercoin/peercoin/blob/master/src/qt/transactionrecord.h#L86
   confirmations: 6,
+  website: 'https://www.peercoin.net/',
+  projectUrl: 'https://github.com/peercoin/peercoin',
 };

@@ -7,4 +7,6 @@ export const common: Common = {
   symbol: 'dash',
   // https://github.com/dashpay/dash/blob/master/src/qt/transactionrecord.h#L103
   confirmations: 6,
+  website: 'https://www.dash.org/',
+  projectUrl: 'https://github.com/dashpay/dash',
 };

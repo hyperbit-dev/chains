@@ -5,4 +5,6 @@ export const common: Common = {
   unit: 'DCR',
   symbol: 'dcr',
   decimalPlaces: 1e8,
+  website: 'https://decred.org/',
+  projectUrl: 'https://github.com/decred',
 };

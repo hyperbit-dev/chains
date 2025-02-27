@@ -15,6 +15,7 @@ export type Versions = {
 
 export type Common = {
   name: string;
+  displayName?: string;
   messageName?: string; // Message name can be different than the name (e.g. Pigeon => DarkCoin)
   unit: string;
   symbol: string;
@@ -26,6 +27,9 @@ export type Common = {
   bech32?: string;
   algorithm?: Algorithm;
   confirmations?: number;
+
+  website: string;
+  projectUrl: string;
 };
 
 export type MainNet = Common & {
@@ -38,6 +42,11 @@ export type MainNet = Common & {
   seedsDns: string[];
   versions: Versions;
 };
+
+export type MainNetBasic = Common & {
+  id: string;
+  network: 'mainnet';
+}
 
 export type TestNet = Common & {
   id: string;
@@ -56,7 +65,7 @@ export type SimNet = Omit<TestNet, 'network'> & {
   network: 'simnet';
 };
 
-export type Network = MainNet | TestNet | RegTest | SimNet;
+export type Network = MainNet | MainNetBasic | TestNet | RegTest | SimNet;
 
 export type Networks = Record<string, Network>;
 

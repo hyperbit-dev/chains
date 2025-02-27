@@ -8,5 +8,7 @@ export const common: Common = {
   // https://github.com/dogecoin/dogecoin/blob/master/src/validation.cpp#L102
   messagePrefix: 'Dogecoin Signed Message:\n',
   // https://github.com/dogecoin/dogecoin/blob/master/src/qt/transactionrecord.h#L83
-  confirmations: 6
+  confirmations: 6,
+  website: 'https://dogecoin.com/',
+  projectUrl: 'https://github.com/dogecoin/dogecoin',
 };

@@ -9,4 +9,6 @@ export const common: Common = {
   messagePrefix: 'Qtum Signed Message:\n',
   // https://github.com/qtumproject/qtum/blob/631efb900d5372d957f66baa58cc800a460839ae/src/qt/transactionrecord.h#L90
   confirmations: 10,
+  website: 'https://www.qtum.org/',
+  projectUrl: 'https://github.com/qtumproject/qtum/',
 };

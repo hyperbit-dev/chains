@@ -9,4 +9,6 @@ export const common: Common = {
   messagePrefix: 'c0ban Signed Message:\n',
   // https://github.com/c0ban/c0ban/blob/master/src/qt/transactionrecord.h#L89
   confirmations: 16,
+  website: 'https://www.c0ban.co/',
+  projectUrl: 'https://github.com/c0ban/c0ban',
 };

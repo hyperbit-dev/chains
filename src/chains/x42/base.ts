@@ -6,4 +6,6 @@ export const common: Common = {
   symbol: 'x42',
   decimalPlaces: 1e8,
   consensus: 'PoS',
+  website: 'https://www.x42.tech/',
+  projectUrl: 'https://github.com/x42protocol',
 };

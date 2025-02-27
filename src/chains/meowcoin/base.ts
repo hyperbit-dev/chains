@@ -11,4 +11,6 @@ export const common: Common = {
   algorithm: 'kawpow',
   // https://github.com/Meowcoin-Foundation/Meowcoin/blob/master/src/qt/transactionrecord.h#L88
   confirmations: 6,
+  website: 'https://www.mewccrypto.com/',
+  projectUrl: 'https://github.com/Meowcoin-Foundation/Meowcoin',
 };

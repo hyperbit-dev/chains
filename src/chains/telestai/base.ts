@@ -12,4 +12,6 @@ export const common: Common = {
   algorithm: 'meraki',
   // https://github.com/Telestai-Project/telestai/blob/ddd6a08591619d1e0c8536fc91e0ff227925450d/src/qt/transactionrecord.h#L88
   confirmations: 6,
+  website: 'https://www.telestai.io/',
+  projectUrl: 'https://github.com/Telestai-Project/telestai',
 };
