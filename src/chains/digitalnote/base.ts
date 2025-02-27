@@ -9,5 +9,5 @@ export const common: Common = {
   // https://github.com/DigitalNoteXDN/DigitalNote-2/blob/master/src/qt/transactionrecord.h#L86
   confirmations: 10,
   website: 'https://digitalnote.org/',
-  projectUrl: 'https://github.com/DigitalNoteXDN'
+  projectUrl: 'https://github.com/DigitalNoteXDN',
 };

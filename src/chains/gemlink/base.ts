@@ -11,5 +11,5 @@ export const common: Common = {
   messagePrefix: 'Snowgem Signed Message:\n',
   confirmations: 6,
   website: 'https://gemlink.org/',
-  projectUrl: 'https://github.com/gemlink'
+  projectUrl: 'https://github.com/gemlink',
 };

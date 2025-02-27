@@ -11,5 +11,5 @@ export const common: Common = {
   // https://github.com/ILCOINDevelopmentTeam/ilcoin-master/blob/f6ceb8adcbd5db8d5cb8beeaf937ceb2d76bb3af/src/qt/transactionrecord.h#L83
   confirmations: 6,
   website: 'https://ilcoincrypto.com/',
-  projectUrl: 'https://github.com/ILCOINDevelopmentTeam/ilcoin-master,'
+  projectUrl: 'https://github.com/ILCOINDevelopmentTeam/ilcoin-master,',
 };

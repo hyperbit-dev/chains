@@ -10,5 +10,5 @@ export const common: Common = {
   messagePrefix: 'Komodo Signed Message:\n',
   confirmations: 6,
   website: 'https://komodoplatform.com/',
-  projectUrl: 'https://github.com/KomodoPlatform/komodo'
+  projectUrl: 'https://github.com/KomodoPlatform/komodo',
 };

@@ -12,5 +12,5 @@ export const common: Common = {
   // https://github.com/bitcoincandyofficial/bitcoincandy/blob/aa72d2440ed5b7f07bef017aa6f8465d06162ff2/src/qt/transactionrecord.h#L99
   confirmations: 6,
   website: 'https://cdy.one/',
-  projectUrl: 'https://github.com/bitcoincandyofficial/bitcoincandy'
+  projectUrl: 'https://github.com/bitcoincandyofficial/bitcoincandy',
 };

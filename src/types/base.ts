@@ -46,7 +46,7 @@ export type MainNet = Common & {
 export type MainNetBasic = Common & {
   id: string;
   network: 'mainnet';
-}
+};
 
 export type TestNet = Common & {
   id: string;
