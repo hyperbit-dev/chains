@@ -8,5 +8,7 @@ export const common: Common = {
   // https://github.com/FeatherCoin/Feathercoin/blob/master/src/util/validation.cpp#L20
   messagePrefix: 'Feathercoin Signed Message:\n',
   // https://github.com/FeatherCoin/Feathercoin/blob/master/src/qt/transactionrecord.h#L88
-  confirmations: 6
+  confirmations: 6,
+  website: 'https://feathercoin.com/',
+  projectUrl: 'https://github.com/FeatherCoin/Feathercoin',
 };

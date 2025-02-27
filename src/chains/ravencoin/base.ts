@@ -14,4 +14,6 @@ export const common: Common = {
   algorithm: 'kawpow',
   // https://github.com/RavenProject/Ravencoin/blob/e48d932ec70267a62ec3541bdaf4fe022c149f0e/src/qt/transactionrecord.h#L88
   confirmations: 6,
+  website: 'https://ravencoin.org/',
+  projectUrl: 'https://github.com/RavenProject/Ravencoin',
 };

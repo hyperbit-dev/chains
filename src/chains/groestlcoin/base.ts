@@ -13,4 +13,6 @@ export const common: Common = {
   ],
   // https://github.com/Groestlcoin/groestlcoin/blob/9588fb9abd581778cfe92ffbeb14fc23c33daa50/src/qt/transactionrecord.h#L75
   confirmations: 6,
+  website: 'https://www.groestlcoin.org/',
+  projectUrl: 'https://github.com/Groestlcoin',
 };

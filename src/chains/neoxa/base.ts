@@ -12,4 +12,6 @@ export const common: Common = {
   algorithm: 'kawpow',
   // https://github.com/NeoxaChain/Neoxa/blob/main/src/qt/transactionrecord.h#L107
   confirmations: 6,
+  website: 'https://www.neoxa.net/',
+  projectUrl: 'https://github.com/NeoxaChain',
 };

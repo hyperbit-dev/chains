@@ -12,4 +12,6 @@ export const common: Common = {
   messageName: 'DarkCoin',
   // https://github.com/Pigeoncoin/pigeoncoin/blob/master/src/qt/transactionrecord.h#L103
   confirmations: 6,
+  website: 'https://pigeoncoin.org/',
+  projectUrl: 'https://github.com/Pigeoncoin/pigeoncoin',
 };

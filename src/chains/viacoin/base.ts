@@ -7,4 +7,6 @@ export const common: Common = {
   decimalPlaces: 1e8,
   // https://github.com/viacoin/viacoin/blob/master/src/qt/transactionrecord.h#L84
   confirmations: 6,
+  website: 'https://viacoin.org/',
+  projectUrl: 'https://github.com/viacoin/viacoin',
 };

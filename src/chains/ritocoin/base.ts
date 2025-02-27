@@ -1,7 +1,7 @@
 import { Common } from '../../types/base';
 
 export const common: Common = {
-  name: 'Rito',
+  name: 'Ritocoin',
   unit: 'RITO',
   symbol: 'rito',
   decimalPlaces: 1e8,
@@ -10,4 +10,6 @@ export const common: Common = {
   algorithm: 'x21s',
   // https://github.com/RitoProject/Ritocoin/blob/master/src/qt/transactionrecord.h#L92
   confirmations: 6,
+  website: 'https://ritocoin.org/',
+  projectUrl: 'https://github.com/RitoProject',
 };

@@ -9,4 +9,6 @@ export const common: Common = {
   messagePrefix: 'Namecoin Signed Message:\n',
   // https://github.com/namecoin/namecoin-core/blob/master/src/qt/transactionrecord.h#L88
   confirmations: 6,
+  website: 'https://www.namecoin.org/',
+  projectUrl: 'https://github.com/namecoin',
 };

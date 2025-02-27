@@ -9,5 +9,7 @@ export const common: Common = {
   symbol: 'blk',
   messagePrefix: 'BlackCoin Signed Message:\n',
   // https://github.com/blacknet-ninja/blackcoin-old/blob/1f0dc61f894aaf5fbb0d79d609f3502f7c7f2771/src/qt/transactionrecord.h#L78
-  confirmations: 10
+  confirmations: 10,
+  website: 'https://blackcoin.org/',
+  projectUrl: 'https://github.com/CoinBlack/blackcoin-more'
 };

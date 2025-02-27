@@ -7,4 +7,6 @@ export const common: Common = {
   decimalPlaces: 1e8,
   // https://github.com/navcoin/navcoin/blob/master/src/util/message.cpp#L25
   messagePrefix: 'Navcoin Signed Message:\n',
+  website: 'https://navcoin.org/',
+  projectUrl: 'https://github.com/NAVCoin',
 };

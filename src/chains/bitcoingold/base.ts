@@ -8,5 +8,7 @@ export const common: Common = {
   /** https://github.com/BTCGPU/BTCGPU/blob/71894be9e4eb573643d85a33d28247b95db1d998/src/validation.cpp#L251 */
   messagePrefix: 'Bitcoin Gold Signed Message:\n',
   algorithm: 'zhash',
-  confirmations: 6
+  confirmations: 6,
+  website: 'https://btgofficial.org/',
+  projectUrl: 'https://github.com/BTCGPU/BTCGPU'
 };

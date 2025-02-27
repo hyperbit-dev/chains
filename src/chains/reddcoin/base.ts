@@ -7,4 +7,6 @@ export const common: Common = {
   decimalPlaces: 1e8,
   // https://github.com/reddcoin-project/reddcoin/blob/develop/src/qt/transactionrecord.h#L89
   confirmations: 6,
+  website: 'https://www.reddcoin.com/',
+  projectUrl: 'https://github.com/reddcoin-project/reddcoin',
 };

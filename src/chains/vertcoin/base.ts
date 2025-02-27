@@ -10,4 +10,6 @@ export const common: Common = {
   messageName: 'Bitcoin Signed Message:\n',
   // https://github.com/vertcoin-project/vertcoin-core/blob/master/src/qt/transactionrecord.h#L85
   confirmations: 6,
+  website: 'https://vertcoin.org/',
+  projectUrl: 'https://github.com/vertcoin-project',
 };

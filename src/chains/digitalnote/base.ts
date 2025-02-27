@@ -8,4 +8,6 @@ export const common: Common = {
   messagePrefix: '\x16Digital Note Signed Message:\n',
   // https://github.com/DigitalNoteXDN/DigitalNote-2/blob/master/src/qt/transactionrecord.h#L86
   confirmations: 10,
+  website: 'https://digitalnote.org/',
+  projectUrl: 'https://github.com/DigitalNoteXDN'
 };

@@ -9,4 +9,6 @@ export const common: Common = {
   messagePrefix: 'Neurai Signed Message:\n',
   // https://github.com/NeuraiProject/Neurai/blob/main/src/qt/transactionrecord.h#L89
   confirmations: 6,
+  website: 'https://neurai.org/',
+  projectUrl: 'https://github.com/NeuraiProject',
 };

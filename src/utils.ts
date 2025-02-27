@@ -6,6 +6,7 @@ import {
   RegTest,
   SimNet,
   Network,
+  Symbol,
 } from './types/base';
 
 export function toBitcoinJS(
@@ -69,9 +70,9 @@ export function findNetworkById(id: string): Network | undefined {
   return undefined;
 }
 
-export function getChainIds(symbol: string): string[] {
+export function getChainIds(symbol: Symbol): string[] {
   return Object.keys(chains).reduce<string[]>((acc: string[], key: string) => {
-    const n = chains[key][symbol];
+    const n = chains[key as Symbol][symbol];
     if (n) {
       return [...acc, n.id];
     }
@@ -81,7 +82,7 @@ export function getChainIds(symbol: string): string[] {
 
 export function getChainNames(): string[] {
   return Object.keys(chains).reduce<string[]>((acc: string[], key: string) => {
-    const mainnet = chains[key].mainnet;
+    const mainnet = chains[key as Symbol].mainnet;
     return [...acc, mainnet.name];
   }, []);
 }
@@ -92,10 +93,10 @@ export function getChainNames(): string[] {
  * @param symbol e.g. btc
  * @returns Network[]
  */
-export function getChainsByNetwork(network: string, symbol?: string): Network[] {
+export function getChainsByNetwork(network: string, symbol?: Symbol): Network[] {
   return Object.keys(chains).reduce<Network[]>(
     (acc: Network[], key: string) => {
-      const n = chains[key][network];
+      const n = chains[key as Symbol][network];
       if (n) {
         if (symbol) {
           if (n.symbol === symbol) {

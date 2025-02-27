@@ -9,5 +9,7 @@ export const common: Common = {
   messagePrefix: 'eCash Signed Message:\n',
   // https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/src/qt/transactionrecord.h#L100
   algorithm: 'zhash',
-  confirmations: 6
+  confirmations: 6,
+  website: 'https://bch.info',
+  projectUrl: 'https://gitlab.com/bitcoin-cash-node/'
 };

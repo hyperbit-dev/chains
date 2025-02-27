@@ -9,4 +9,6 @@ export const common: Common = {
   messagePrefix: 'Monacoin Signed Message:\n',
   // https://github.com/monacoinproject/monacoin/blob/master-0.20.3/src/qt/transactionrecord.h#L88
   confirmations: 6,
+  website: 'https://monacoin.org/',
+  projectUrl: 'https://github.com/monacoinproject/monacoin',
 };
