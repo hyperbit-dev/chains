@@ -17,10 +17,7 @@ export const mainnet: MainNet = {
     magic: 0xc8a63bfc,
   },
   // https://github.com/5G-Cash/5G/blob/main/src/chainparams.cpp#L182
-  seedsDns: [
-    'node1.fiveg.cash',
-    'node2.fiveg.cash',
-  ],
+  seedsDns: ['node1.fiveg.cash', 'node2.fiveg.cash'],
   versions: {
     // https://en.bitcoin.it/wiki/BIP_0032
     bip32: {

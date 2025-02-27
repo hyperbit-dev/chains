@@ -18,11 +18,11 @@ export const mainnet: MainNet = {
   },
   // https://github.com/bitcoincandyofficial/bitcoincandy/blob/master/src/chainparams.cpp#L255
   seedsDns: [
-    "seed.cdy.one",
-    "cdyseed1.awmlite.com",
-    "cdyseed2.awmlite.com",
-    "block.cdy.one",
-    "seed.bitcdy.com",
+    'seed.cdy.one',
+    'cdyseed1.awmlite.com',
+    'cdyseed2.awmlite.com',
+    'block.cdy.one',
+    'seed.bitcdy.com',
   ],
   versions: {
     // https://en.bitcoin.it/wiki/BIP_0032

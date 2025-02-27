@@ -8,5 +8,5 @@ export const common: Common = {
   messagePrefix: 'BeeZee Signed Message:\n',
   confirmations: 6,
   website: 'https://getbze.com/',
-  projectUrl: 'https://github.com/bze-alphateam'
+  projectUrl: 'https://github.com/bze-alphateam',
 };

@@ -12,5 +12,5 @@ export const common: Common = {
   // https://github.com/Raptor3um/raptoreum/blob/900794ea94ff11023667765173295b459d32732c/src/qt/transactionrecord.h#L109
   confirmations: 6,
   website: 'https://raptoreum.com/',
-  projectUrl: 'https://github.com/Raptor3um/raptoreum,'
+  projectUrl: 'https://github.com/Raptor3um/raptoreum,',
 };

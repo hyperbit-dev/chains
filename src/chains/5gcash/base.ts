@@ -11,5 +11,5 @@ export const common: Common = {
   // https://github.com/5G-Cash/5G/blob/main/src/qt/transactionrecord.h#L89
   confirmations: 6,
   website: 'https://fiveg.cash/',
-  projectUrl: 'https://github.com/5g-cash/5g'
+  projectUrl: 'https://github.com/5g-cash/5g',
 };

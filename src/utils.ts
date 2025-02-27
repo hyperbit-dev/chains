@@ -93,7 +93,10 @@ export function getChainNames(): string[] {
  * @param symbol e.g. btc
  * @returns Network[]
  */
-export function getChainsByNetwork(network: string, symbol?: Symbol): Network[] {
+export function getChainsByNetwork(
+  network: string,
+  symbol?: Symbol
+): Network[] {
   return Object.keys(chains).reduce<Network[]>(
     (acc: Network[], key: string) => {
       const n = chains[key as Symbol][network];

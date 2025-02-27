@@ -10,5 +10,5 @@ export const common: Common = {
   algorithm: 'zhash',
   confirmations: 6,
   website: 'https://btgofficial.org/',
-  projectUrl: 'https://github.com/BTCGPU/BTCGPU'
+  projectUrl: 'https://github.com/BTCGPU/BTCGPU',
 };

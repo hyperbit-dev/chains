@@ -12,5 +12,5 @@ export const common: Common = {
   messagePrefix: 'Zelcash Signed Message:\n',
   confirmations: 6,
   website: 'https://runonflux.io/',
-  projectUrl: 'https://github.com/RunOnFlux/fluxd'
+  projectUrl: 'https://github.com/RunOnFlux/fluxd',
 };

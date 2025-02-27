@@ -11,5 +11,5 @@ export const common: Common = {
   messagePrefix: 'Zero Signed Message:\n',
   confirmations: 6,
   website: 'https://zero.directory/',
-  projectUrl: 'https://github.com/zerocurrencycoin'
+  projectUrl: 'https://github.com/zerocurrencycoin',
 };
