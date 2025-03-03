@@ -31,12 +31,19 @@ describe('chains', () => {
 
   it('should get a list of chain ids', () => {
     const names = getChainIds('mainnet');
-    expect(names).toContain('E406C7BC-5DFD-461F-B67C-D8027DD72B96');
+    expect(names).toContain('A44223B1-CEE2-4EE6-B331-36A6BF608A69');
   });
 
   it('should get chain networks by network type', () => {
     const networks = getChainsByNetwork('mainnet');
     expect(networks.length).toBeGreaterThan(0);
+    expect(networks[0].id).toBe('A44223B1-CEE2-4EE6-B331-36A6BF608A69');
+  });
+
+  it('should get chain networks by network and symbol', () => {
+    const networks = getChainsByNetwork('mainnet', 'btc');
+    expect(networks.length).toBeGreaterThan(0);
     expect(networks[0].id).toBe('E406C7BC-5DFD-461F-B67C-D8027DD72B96');
+    expect(networks[0].name).toBe('Bitcoin');
   });
 });
