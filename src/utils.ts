@@ -70,9 +70,9 @@ export function findNetworkById(id: string): Network | undefined {
   return undefined;
 }
 
-export function getChainIds(symbol: Symbol): string[] {
+export function getChainIds(network: Network['network']): string[] {
   return Object.keys(chains).reduce<string[]>((acc: string[], key: string) => {
-    const n = chains[key as Symbol][symbol];
+    const n = chains[key as Symbol][network];
     if (n) {
       return [...acc, n.id];
     }
