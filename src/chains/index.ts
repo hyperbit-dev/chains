@@ -22,7 +22,6 @@ export * from './evrmore';
 export * from './feathercoin';
 export * from './firo';
 export * from './flits';
-export * from './frenchdigital';
 export * from './frencoin';
 export * from './gemlink';
 export * from './groestlcoin';

@@ -172,7 +172,6 @@ export type Symbol =
   | 'dogec'
   | 'dyn'
   | 'evr'
-  | 'fdr'
   | 'firo'
   | 'fls'
   | 'flux'
