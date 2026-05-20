@@ -1,8 +1,17 @@
 {
   "name": "@hyperbitjs/chains",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Blockchain network definitions for Bitcoin, Litecoin, Dogecoin, Ethereum, and 200+ other cryptocurrencies",
-  "keywords": ["bitcoin", "litecoin", "dogecoin", "ethereum", "cryptocurrency", "blockchain", "network", "bip122"],
+  "keywords": [
+    "bitcoin",
+    "litecoin",
+    "dogecoin",
+    "ethereum",
+    "cryptocurrency",
+    "blockchain",
+    "network",
+    "bip122"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "dist/index.cjs",
