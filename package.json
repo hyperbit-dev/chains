@@ -1,6 +1,6 @@
 {
   "name": "@hyperbitjs/chains",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Blockchain network definitions for Bitcoin, Litecoin, Dogecoin, Ethereum, and 200+ other cryptocurrencies",
   "keywords": [
     "bitcoin",
