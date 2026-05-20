@@ -1,8 +1,11 @@
-![Hyperbit Chains Banner](https://github.com/hyperbit-dev/chains/raw/master/media/repo-banner.png)
+# @hyperbitjs/chains
 
-# Hyperbit - Chains
+[![npm version](https://img.shields.io/npm/v/@hyperbitjs/chains.svg?style=flat-square)](https://www.npmjs.org/package/@hyperbitjs/chains)
+[![npm downloads](https://img.shields.io/npm/dm/@hyperbitjs/chains.svg?style=flat-square)](https://www.npmjs.org/package/@hyperbitjs/chains)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+[![CI/CD](https://github.com/hyperbit-dev/chains/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/hyperbit-dev/chains/actions)
 
-JavaScript dictionary of blockchain specifications inspired from coinkey with additional fields and values.
+Comprehensive blockchain network specifications for 50+ cryptocurrencies. Access mainnet, testnet, and custom network configurations for Bitcoin, Ethereum, Litecoin, and 47+ more blockchains.
 
 ## Installation
 
@@ -1340,3 +1343,66 @@ If you're interested in contributing, please read the [contributing docs](https:
 | FVDC       | ForumCoin                                                                                 |               |
 |            | Fuel                                                                                      |               |
 | XNA        | [Neurai](https://github.com/NeuraiProject/chains/blob/master/src/chains/neurai)           | Yes           |
+
+## Overview
+This project lives at `chains` and is part of the broader multi-project workspace.
+**Description:** No description provided yet.
+## Purpose
+- Deliver the core capability owned by this project.
+- Provide stable commands and interfaces for other apps/packages in the workspace.
+- Keep implementation details localized so changes stay maintainable.
+## Architecture Notes
+- Type: **Project**
+- Package manager metadata source: `package.json`
+- Runtime entry hints: `dist/index.cjs`
+## Setup
+1. Install dependencies from this directory:
+```bash
+npm install
+```
+2. Run key scripts as needed (see script table below).
+## NPM Scripts
+| Script | Command |
+|---|---|
+| `build` | `vite build` |
+| `type-check` | `tsc --noEmit` |
+| `lint` | `eslint . --max-warnings 0` |
+| `lint:fix` | `eslint . --fix && prettier --write .` |
+| `format` | `prettier --write .` |
+| `format:check` | `prettier --check .` |
+| `test` | `vitest --run` |
+| `test:watch` | `vitest` |
+| `validate` | `npm run type-check && npm run lint && npm run test` |
+| `prepublishOnly` | `npm run build && npm run validate` |
+## Dependencies
+### Production
+_None listed._
+### Development
+- `@types/node`: `^20.10.0`
+- `@typescript-eslint/eslint-plugin`: `^7.0.0`
+- `@typescript-eslint/parser`: `^7.0.0`
+- `eslint`: `^8.56.0`
+- `prettier`: `^3.3.3`
+- `typescript`: `^5.3.3`
+- `vite`: `^5.4.21`
+- `vitest`: `^1.6.1`
+## Configuration
+- Primary config source: `package.json`
+- No `.env.example` detected in this directory.
+- Add project-specific operational notes to `MEMORY_BANK.md`.
+## Development Workflow
+1. Make changes in focused modules.
+2. Run the smallest relevant script/test first.
+3. Run full validation scripts before merging.
+4. Update this README and memory bank whenever behavior/contracts change.
+## Testing and Validation
+- Prefer script-driven checks from the table above (for example: `test`, `build`, `lint`).
+- If this project has no tests yet, add smoke checks and document them in `MEMORY_BANK.md`.
+## LLM Context
+When using an LLM coding assistant in this folder, always include:
+- Exact target file paths and expected behavior changes.
+- Validation command(s) run after edits.
+- Runtime/config assumptions (.env, API keys, ports, external services).
+
+## Memory Bank
+See `MEMORY_BANK.md` for operational context, commands, and troubleshooting notes.
