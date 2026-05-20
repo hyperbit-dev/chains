@@ -83,6 +83,7 @@ export type BitCore = (MainNet | TestNet | RegTest | SimNet) & {
   networkMagic: number;
   pubkeyhash: number;
   privatekey: number;
+  scripthash: number;
   xpubkey: number;
   xprivkey: number;
   dnsSeeds: string[];

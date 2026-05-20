@@ -1,30 +1,37 @@
 {
   "name": "@hyperbitjs/chains",
-  "version": "1.10.2",
+  "version": "2.0.0",
+  "description": "Blockchain network definitions for Bitcoin, Litecoin, Dogecoin, Ethereum, and 200+ other cryptocurrencies",
+  "keywords": ["bitcoin", "litecoin", "dogecoin", "ethereum", "cryptocurrency", "blockchain", "network", "bip122"],
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=16"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "vitest",
-    "lint": "tsdx lint",
-    "lint:fix": "tsdx lint --fix",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
+    "build": "vite build",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix && prettier --write .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "validate": "npm run type-check && npm run lint && npm run test",
+    "prepublishOnly": "npm run build && npm run validate"
   },
   "prettier": {
     "printWidth": 80,
@@ -36,35 +43,24 @@
     "type": "git",
     "url": "https://github.com/hyperbit-dev/chains.git"
   },
+  "bugs": {
+    "url": "https://github.com/hyperbit-dev/chains/issues"
+  },
   "homepage": "https://github.com/hyperbit-dev/chains/blob/master/README.md",
   "author": "Hyperbit",
-  "module": "dist/chains.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/chains.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/chains.esm.js",
-      "limit": "10 KB"
-    }
-  ],
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
-    "@types/jest": "^29.5.12",
-    "@types/mocha": "^10.0.6",
-    "husky": "^8.0.2",
-    "size-limit": "^8.1.0",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.8.4",
-    "vitest": "^1.3.1"
-  },
   "publishConfig": {
     "access": "public"
   },
-  "overrides": {
-    "jsdom": "^16.5.0",
-    "node-notifier": "^8.0.1"
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitest/coverage-v8": "^4.1.6",
+    "eslint": "^8.56.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.3.3",
+    "vite": "^8.0.13",
+    "vite-plugin-dts": "^5.0.1",
+    "vitest": "^4.1.6"
   }
 }
