@@ -1,11 +1,17 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+Thanks for your interest in contributing.
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+## Ground rules
 
-## Pull Request Process
+- Open an issue before large changes to discuss direction.
+- Keep pull requests focused: one concern per PR.
+- Follow the existing code style (lint should pass locally before you push).
+- Add or update tests for behavior changes.
+- Update documentation when behavior or public API changes.
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
+## Development
+
+1. Install dependencies with the package manager documented in the README.
+2. Use the scripts in `package.json` for lint, test, and build.
+3. Ensure CI is green before requesting review.
