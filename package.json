@@ -67,7 +67,7 @@
     "@vitest/coverage-v8": "^4.1.6",
     "eslint": "^8.56.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.3.3",
+    "typescript": "^7.0.2",
     "vite": "^8.0.13",
     "vite-plugin-dts": "^5.0.1",
     "vitest": "^4.1.6"
