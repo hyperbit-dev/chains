@@ -1,5 +1,8 @@
 name: size
 on: [pull_request]
+permissions:
+  contents: read
+
 jobs:
   size:
     runs-on: ubuntu-latest
